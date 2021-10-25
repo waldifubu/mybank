@@ -1,6 +1,7 @@
 package util;
 
 import entity.Account;
+import entity.Book;
 import entity.User;
 import model.BankSettingsDTO;
 import org.hibernate.Session;
@@ -92,13 +93,15 @@ public class DatabaseService {
 
     public boolean saveUser(User user) {
         Session session = sessionFactory.openSession();
+
         try {
             session.beginTransaction();
             session.update(user);
-            session.getTransaction().commit();
+            session.flush();
             session.close();
         } catch (Exception ex) {
             session.close();
+            ex.printStackTrace();
             return false;
         }
 

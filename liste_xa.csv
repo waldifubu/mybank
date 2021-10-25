@@ -58,9 +58,10 @@ tb_workday;Arbeitsdatum;Working date
 tb_console;Konsole;Console
 tb_first;Bitte zuerst Konto auswählen;Please select an account first
 set_work;Arbeitsdatum einstellen;Setting work day
+set_work_apply;Arbeitsdatum geändert;Working date changed successfully
+set_work_problem;Probleme beim ändern des Arbeitsdatums;Issues with changing working date
 from;Von;From
 to;An;To
 amount;Betrag eingeben;Input amount
 apply;übernehmen;Apply
 select_action;Bitte Auswahl mit Doppelklick oder ENTER bestätigen;Please select with double click or press RETURN
-console;Konsole;Console

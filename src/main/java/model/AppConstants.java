@@ -22,7 +22,6 @@ public class AppConstants {
 
     public final static String TB_SELECT_ACCOUNT = "tb_select_account";
     public final static String TB_WORK_DAY = "tb_work_day";
-    public final static String TB_WORK_DAY_SAVE = "tb_work_day_save";
 
     /**
      * Login results

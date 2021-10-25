@@ -4,7 +4,10 @@ import dialog.AboutDialog;
 import dialog.LoginDialog;
 import dialog.SettingsDialog;
 import dialog.WorkingDayDialog;
-import model.*;
+import model.AppConstants;
+import model.BankSettingsDTO;
+import model.Language;
+import model.Model;
 import view.MyBankMenuBar;
 import view.SplashScreen;
 import view.View;
@@ -152,7 +155,6 @@ public class Controller implements ActionListener {
                 bankSettingsDTO.setApplicationLanguage(language.getLanguageStr());
                 if (SettingsController.saveSettings(bankSettingsDTO)) {
                     view.print(language.trans("saveset"));
-
                 }
                 view.closeSecondaryScreen();
                 break;
@@ -170,6 +172,16 @@ public class Controller implements ActionListener {
             case AppConstants.TB_WORK_DAY:
                 WorkingDayDialog workingDayDialog = new WorkingDayDialog(view, language, model.getWorkingDay());
                 view.setSecondaryScreen(workingDayDialog);
+                workingDayDialog.getApplyButton().addActionListener((ActionEvent e) -> {
+                    String newWorkingDay = workingDayDialog.getDateTextField().getText();
+                    if (model.saveWorkingDay(newWorkingDay)) {
+                        view.updateStatusBar(model.getUser());
+                        view.closeSecondaryScreen();
+                        view.print(language.trans("set_work_apply"));
+                    } else {
+                        view.print(language.trans("set_work_problem"));
+                    }
+                });
                 workingDayDialog.getDateTextField().addKeyListener(new KeyListener() {
                     public void keyTyped(KeyEvent e) {
                     }
@@ -182,28 +194,12 @@ public class Controller implements ActionListener {
                         if (key == KeyEvent.VK_ESCAPE) {
                             view.closeSecondaryScreen();
                         }
-                        /*
                         if (key == KeyEvent.VK_ENTER) {
-                            //                     controller.getModel().setWorkingDay(jTextField.getText());
-                            finalWorkingDayDialog.getApplyButton().doClick();
+                            workingDayDialog.getApplyButton().doClick();
                         }
-                         */
                     }
                 });
-                break;
-/*
-                workingDayDialog.getApplyButton().addActionListener((ActionEvent e) -> {
-                    String newWorkingDay = finalWorkingDayDialog.getDateTextField().getText();
-                    model.saveWorkingDay(newWorkingDay);
-                });
-*/
-                //settingsDialog.getSettSave().addActionListener(this);
-            case AppConstants.TB_WORK_DAY_SAVE:
-                workingDayDialog = (WorkingDayDialog) view.getSecondaryScreen();
-                String newWorkingDay = workingDayDialog.getDateTextField().getText();
-                if(model.saveWorkingDay(newWorkingDay)) {
-                    view.closeSecondaryScreen();
-                }
+                workingDayDialog.setVisible(true);
                 break;
         }
     }

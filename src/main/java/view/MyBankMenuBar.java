@@ -58,7 +58,7 @@ public class MyBankMenuBar extends JMenuBar {
         conntest.setActionCommand(AppConstants.CONN_TEST);
 //        conntest.addActionListener(e -> gui.connectionTestView());
 
-        JMenuItem console = new JMenuItem(lang.trans("console"), new ImageIcon(getClass().getResource(MyConstants.getImagePath() + "console.png")));
+        JMenuItem console = new JMenuItem(lang.trans("tb_console"), new ImageIcon(getClass().getResource(MyConstants.getImagePath() + "console.png")));
         console.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, InputEvent.ALT_DOWN_MASK));
         console.setActionCommand(AppConstants.CONSOLE);
 

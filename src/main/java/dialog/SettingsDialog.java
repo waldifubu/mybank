@@ -11,15 +11,15 @@ import java.util.Vector;
 
 public class SettingsDialog extends ScreenDialog {
 
+    private final JComboBox<String> dropDown;
+    private final JTextField dbhost;
+    private final JTextField dbuser;
+    private final JPasswordField dbpassword;
+    private final JTextField dbdatabase;
+    private final JTextField dbdriver;
+    private final JTextField dbport;
+    private final JTextField dburl;
     JButton settCancel, settSave;
-    private JComboBox<String> dropDown;
-    private JTextField dbhost, a, b;
-    private JTextField dbuser;
-    private JPasswordField dbpassword;
-    private JTextField dbdatabase;
-    private JTextField dbdriver;
-    private JTextField dbport;
-    private JTextField dburl;
 
     public SettingsDialog(JFrame mainFrame, Language language, BankSettingsDTO bankSettingsDTO) {
         super(mainFrame, true);
@@ -149,16 +149,8 @@ public class SettingsDialog extends ScreenDialog {
         return settCancel;
     }
 
-    public void setSettCancel(JButton settCancel) {
-        this.settCancel = settCancel;
-    }
-
     public JButton getSettSave() {
         return settSave;
-    }
-
-    public void setSettSave(JButton settSave) {
-        this.settSave = settSave;
     }
 
     public JComboBox<String> getDropDown() {

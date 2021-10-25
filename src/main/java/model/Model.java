@@ -14,7 +14,7 @@ public class Model {
     private String workingDay;
     private List accounts;
     private BigDecimal balance;
-    private DatabaseService databaseService;
+    private final DatabaseService databaseService;
 
     private User user;
 
@@ -62,7 +62,12 @@ public class Model {
     }
 
     public boolean saveWorkingDay(String workingDay) {
-        user.setWorkingDay(Date.valueOf(workingDay));
+        try {
+            user.setWorkingDay(Date.valueOf(workingDay));
+        } catch (IllegalArgumentException illegalArgumentException) {
+            return false;
+        }
+
         return databaseService.saveUser(user);
     }
 
@@ -75,8 +80,6 @@ public class Model {
     }
 
     public void disconnect() {
-        if (databaseService != null) {
-            databaseService.exit();
-        }
+        databaseService.exit();
     }
 }

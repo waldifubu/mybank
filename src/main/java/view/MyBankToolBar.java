@@ -61,8 +61,8 @@ public class MyBankToolBar extends JToolBar {
         JButton sparbuch = new JButton(language.trans("tb_save"));
 
         JButton workday = new JButton(language.trans("tb_workday"));
-//        workday.addActionListener(e -> workingDayScreen());
         workday.setActionCommand(AppConstants.TB_WORK_DAY);
+        workday.setMnemonic(KeyEvent.VK_W);
 
         consoleCheckbox = new JCheckBox(" " + language.trans("tb_console"), false);
         consoleCheckbox.setMnemonic(KeyEvent.VK_C);
