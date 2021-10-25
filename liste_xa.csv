@@ -1,0 +1,66 @@
+cancel;Abbrechen;cancel
+chokonto;Konto ausgewählt;Account selected
+connect;Verbinden;Connect
+connmess;Es wird lediglich die Verbindung zur Datenbank geprüft;Checking for connection to Database
+connted;verbunden;connected
+conntest;Verbindungstest;Connection test
+connuser;Angemeldeter Benutzer:;Connected user:
+db;Datenbank;Database
+dbdriver;Datenbanktreiber;Database driver
+dbtype;Datenbanktyp;Database type
+extras;Extras;Extras
+file;Datei;File
+func;Funktionen;Functions
+help;Hilfe;Help
+host;Host;Host
+dburl;Datenbank URL;Database URL
+income;Einzahlvorgang abgeschlossen;Income payment finished!
+knummer;Kontonummer;Account number
+login;Anmelden;Login
+logoff;Abmelden;Logoff
+logoffs;Benutzer abgemeldet;User logged off
+logofft;abgemeldet;disconnected
+noaccess;Zugriff verweigert!;Access denied!
+noConn;Verbindung nicht möglich;Connection unavailable
+nokonto;Es wurde kein Konto gefunden, bitte zuerst anlegen!;No account found, please create one first!
+outcome;Auszahlvorgang abgeschlossen;Outcome payment finished!
+passwort;Kennwort;Password
+plwait;Bitte warten...;Please wait...
+quit;Beenden;Quit
+save;Speichern;apply
+saveset;Einstellungen übernommen. Bitte Anwendung neustarten;Settings saved. Please restart this program
+settings;Einstellungen;Settings
+standard;Standardwert;Default
+tax30;Zinsen sind einkommenssteuerpflichtig;Earning interest is personal income tax
+toohigh;Bitte realistisch bleiben, Betrag:;Please try realistic amount, not:
+toolbar;Toolbar mit Funktionen;Toolbar for actions
+transfinish;Transaktion erfolgreich abgeschlossen;Transaction successful finished
+unconnted;nicht verbunden;not connected
+user;Benutzer;User
+userconn;ist angemeldet;logged on
+welcome;Herzlich willkommen!;Welcome!
+welcomever;Willkommen zu myBank 1.0!;Welcome to myBank 1.0!
+wronginput;Eingabe fehlerhaft;Input fault
+wrongtrans;Eingabe nicht verwertbar - Abbruch der Transaktion;Input invalid - Transaction canceled
+dateformat;dd.MM.yyyy;MM/dd/yyyy
+datestr;TT.MM.JJJJ;MM/DD/YYYY
+tb_choose;Kontowahl;Select account
+tb_create;Konto anlegen;Create account
+tb_close;Konto auflösen;Close account
+tb_in;Einzahlen;Pay in
+tb_out;Abheben;Pay out
+tb_transfer;Überweisung;Transfer
+tb_sales;Umsätze;Sales
+tb_info;Kontoinfo;Account data
+tb_fix;Festgeldkonto;Time dep.account
+tb_save;Sparbuch;Savings account
+tb_workday;Arbeitsdatum;Working date
+tb_console;Konsole;Console
+tb_first;Bitte zuerst Konto auswählen;Please select an account first
+set_work;Arbeitsdatum einstellen;Setting work day
+from;Von;From
+to;An;To
+amount;Betrag eingeben;Input amount
+apply;übernehmen;Apply
+select_action;Bitte Auswahl mit Doppelklick oder ENTER bestätigen;Please select with double click or press RETURN
+console;Konsole;Console

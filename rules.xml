@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mybank>
+  <alle>6</alle>
+  <spar para1="1.21">1</spar>
+  <giro para1="10" para2="20">5</giro>
+  <fest para1="11" para2="21">1</fest>
+  <zahlung>37000</zahlung>
+</mybank>

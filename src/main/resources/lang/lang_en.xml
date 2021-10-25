@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>comment
+        Mon Mar 18 22:29:13 CET 2013
+    </comment>
+    <entry key="saveset">Settings saved</entry>
+    <entry key="tb_sales">Sales</entry>
+    <entry key="welcome">Welcome!</entry>
+    <entry key="tax30">Earning interest is personal income tax</entry>
+    <entry key="toohigh">Please try realistic amount, not:</entry>
+    <entry key="tb_transfer">Transfer</entry>
+    <entry key="noaccess">Access denied!</entry>
+    <entry key="tb_in">Pay in</entry>
+    <entry key="outcome">Outcome payment finished!</entry>
+    <entry key="nokonto">No account found, please create one first!</entry>
+    <entry key="tb_workday">Working date</entry>
+    <entry key="tb_choose">Select account</entry>
+    <entry key="host">Host</entry>
+    <entry key="userconn">logged on</entry>
+    <entry key="wrongtrans">Input invalid - Transaction canceled</entry>
+    <entry key="tb_close">Close account</entry>
+    <entry key="connted">connected</entry>
+    <entry key="cancel">cancel</entry>
+    <entry key="income">Income payment finished!</entry>
+    <entry key="connuser">Connected user:</entry>
+    <entry key="tb_save">Savings account</entry>
+    <entry key="db">Database</entry>
+    <entry key="toolbar">Toolbar for actions</entry>
+    <entry key="quit">Quit</entry>
+    <entry key="connect">Connect</entry>
+    <entry key="plwait">Please wait...</entry>
+    <entry key="func">Functions</entry>
+    <entry key="file">File</entry>
+    <entry key="save">apply</entry>
+    <entry key="logoff">Logoff</entry>
+    <entry key="wronginput">Input fault</entry>
+    <entry key="passwort">Password</entry>
+    <entry key="tb_create">Create account</entry>
+    <entry key="welcomever">Welcome to bankController 1.0!</entry>
+    <entry key="user">User</entry>
+    <entry key="help">Help</entry>
+    <entry key="tb_first">Please select acount first</entry>
+    <entry key="unconnted">not connected</entry>
+    <entry key="logofft">disconnected</entry>
+    <entry key="logoffs">User logged off</entry>
+    <entry key="datestr">MM/DD/YYYY</entry>
+    <entry key="login">Login</entry>
+    <entry key="tb_fix">Time dep. account</entry>
+    <entry key="tb_console">Console</entry>
+    <entry key="dbdriver">Database driver</entry>
+    <entry key="dbtype">Database type</entry>
+    <entry key="tb_out">Pay out</entry>
+    <entry key="tb_info">Account data</entry>
+    <entry key="set_work">Setting work day</entry>
+    <entry key="standard">Default</entry>
+    <entry key="chokonto">Account chosen</entry>
+    <entry key="extras">Extras</entry>
+    <entry key="transfinish">Transaction successful finished</entry>
+    <entry key="conntest">Connection test</entry>
+    <entry key="settings">Settings</entry>
+    <entry key="knummer">Account number</entry>
+    <entry key="noConn">Connection unavailable</entry>
+    <entry key="dateformat">MM/dd/yyyy</entry>
+    <entry key="connmess">Checking for connection to Database</entry>
+    <entry key="amount">Input amount</entry>
+    <entry key="apply">apply</entry>
+    <entry key="select_action">Please select with double click or press RETURN</entry>
+    <entry key="from">From</entry>
+    <entry key="to">To</entry>
+</properties>

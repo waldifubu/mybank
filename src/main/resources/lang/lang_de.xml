@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>comment
+        Mon Mar 18 22:29:12 CET 2013
+    </comment>
+    <entry key="saveset">Einstellungen übernommen</entry>
+    <entry key="tb_sales">Umsätze</entry>
+    <entry key="welcome">Herzlich willkommen!</entry>
+    <entry key="tax30">Zinsen sind einkommenssteuerpflichtig</entry>
+    <entry key="toohigh">Bitte realistisch bleiben, Betrag:</entry>
+    <entry key="tb_transfer">Überweisung</entry>
+    <entry key="noaccess">Zugriff verweigert!</entry>
+    <entry key="tb_in">Einzahlen</entry>
+    <entry key="outcome">Auszahlvorgang abgeschlossen</entry>
+    <entry key="nokonto">Es wurde kein Konto gefunden, bitte zuerst anlegen!</entry>
+    <entry key="tb_workday">Arbeitsdatum</entry>
+    <entry key="tb_choose">Kontowahl</entry>
+    <entry key="host">Host</entry>
+    <entry key="userconn">ist angemeldet</entry>
+    <entry key="wrongtrans">Eingabe nicht verwertbar - Abbruch der Transaktion</entry>
+    <entry key="tb_close">Konto auflösen</entry>
+    <entry key="connted">verbunden</entry>
+    <entry key="cancel">Abbrechen</entry>
+    <entry key="income">Einzahlvorgang abgeschlossen</entry>
+    <entry key="connuser">Angemeldeter Benutzer:</entry>
+    <entry key="tb_save">Sparbuch</entry>
+    <entry key="db">Datenbank</entry>
+    <entry key="toolbar">Toolbar mit Funktionen</entry>
+    <entry key="quit">Beenden</entry>
+    <entry key="connect">Verbinden</entry>
+    <entry key="plwait">Bitte warten...</entry>
+    <entry key="func">Funktionen</entry>
+    <entry key="file">Datei</entry>
+    <entry key="save">Speichern</entry>
+    <entry key="logoff">Abmelden</entry>
+    <entry key="wronginput">Eingabe fehlerhaft</entry>
+    <entry key="passwort">Kennwort</entry>
+    <entry key="tb_create">Konto anlegen</entry>
+    <entry key="welcomever">Willkommen zu bankController 111.0!</entry>
+    <entry key="user">Benutzer</entry>
+    <entry key="help">Hilfe</entry>
+    <entry key="tb_first">Bitte zuerst Konto auswählen</entry>
+    <entry key="unconnted">nicht verbunden</entry>
+    <entry key="logofft">abgemeldet</entry>
+    <entry key="logoffs">Benutzer abgemeldet</entry>
+    <entry key="datestr">TT.MM.JJJJ</entry>
+    <entry key="login">Anmelden</entry>
+    <entry key="tb_fix">Festgeldkonto</entry>
+    <entry key="tb_console">Konsole</entry>
+    <entry key="dbdriver">Datenbanktreiber</entry>
+    <entry key="dbtype">Datenbanktyp</entry>
+    <entry key="tb_out">Abheben</entry>
+    <entry key="tb_info">Kontoinfo</entry>
+    <entry key="set_work">Arbeitsdatum einstellen</entry>
+    <entry key="standard">Standardwert</entry>
+    <entry key="chokonto">Konto ausgewählt</entry>
+    <entry key="extras">Extras</entry>
+    <entry key="transfinish">Transaktion erfolgreich abgeschlossen</entry>
+    <entry key="conntest">Verbindungstest</entry>
+    <entry key="settings">Einstellungen</entry>
+    <entry key="knummer">Kontonummer</entry>
+    <entry key="noConn">Verbindung nicht möglich</entry>
+    <entry key="dateformat">dd.MM.yyyy</entry>
+    <entry key="connmess">Es wird lediglich die Verbindung zur Datenbank geprüft</entry>
+    <entry key="amount">Betrag eingeben</entry>
+    <entry key="apply">Übernehmen</entry>
+    <entry key="select_action">Bitte Auswahl mit Doppelklick oder ENTER bestätigen</entry>
+    <entry key="from">Von</entry>
+    <entry key="to">An</entry>
+</properties>
