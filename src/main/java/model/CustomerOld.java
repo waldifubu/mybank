@@ -8,7 +8,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-public class Customer {
+public class CustomerOld {
     private long id;
     private String nick;
     private String fullname;
@@ -19,7 +19,7 @@ public class Customer {
     private final Database database;
     private BankController bankController;
 
-    public Customer(String username, Database database, BankController m) {
+    public CustomerOld(String username, Database database, BankController m) {
         this.database = database;
         try {
             ResultSet rs = this.database.myQuery("select * from users where u_nick='" + username + "'");

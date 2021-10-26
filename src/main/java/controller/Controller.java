@@ -1,9 +1,6 @@
 package controller;
 
-import dialog.AboutDialog;
-import dialog.LoginDialog;
-import dialog.SettingsDialog;
-import dialog.WorkingDayDialog;
+import dialog.*;
 import model.AppConstants;
 import model.BankSettingsDTO;
 import model.Language;
@@ -51,7 +48,7 @@ public class Controller implements ActionListener {
         view.setLocation(model.getBankSettingsDTO().getPosition().x, model.getBankSettingsDTO().getPosition().y);
 
         // For better visibility, we outsource code for main menu to another class
-        view.setMyBankMenuBar(new MyBankMenuBar(language, view));
+        view.setMyBankMenuBar(new MyBankMenuBar(language));
 
         buildGui();
     }
@@ -63,7 +60,7 @@ public class Controller implements ActionListener {
     }
 
     private void buildGui() {
-        Thread t1 = new Thread(new SplashScreen(5000));
+        Thread t1 = new Thread(new SplashScreen(1));
         t1.setPriority(Thread.MIN_PRIORITY);
         Thread t2 = new Thread(view);
         t2.setPriority(Thread.MAX_PRIORITY);
@@ -168,12 +165,15 @@ public class Controller implements ActionListener {
                 view.setSize(view.getWidth(), view.getHeight() - 1);
                 break;
             case AppConstants.TB_SELECT_ACCOUNT:
+                SelectAccountDialog selectAccountDialog = new SelectAccountDialog(view, language);
+                view.setSecondaryScreen(selectAccountDialog);
+
                 break;
             case AppConstants.TB_WORK_DAY:
                 WorkingDayDialog workingDayDialog = new WorkingDayDialog(view, language, model.getWorkingDay());
                 view.setSecondaryScreen(workingDayDialog);
                 workingDayDialog.getApplyButton().addActionListener((ActionEvent e) -> {
-                    String newWorkingDay = workingDayDialog.getDateTextField().getText();
+                    String newWorkingDay = workingDayDialog.getWorkDate();
                     if (model.saveWorkingDay(newWorkingDay)) {
                         view.updateStatusBar(model.getUser());
                         view.closeSecondaryScreen();

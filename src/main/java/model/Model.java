@@ -45,7 +45,7 @@ public class Model {
     }
 
     public String getWorkingDay() {
-        return user.getWorkingDay().toLocalDate().toString();
+        return user.getWorkingday().toString();
     }
 
     public void setWorkingDay(String workingDay) {

@@ -3,39 +3,29 @@ package entity;
 import javax.persistence.*;
 import java.sql.Date;
 
-@Table(name = "users")
+@Table(name = "user")
 @Entity
 public class User {
     @Id
-    @Column(name = "u_id", nullable = false)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-    @Column(name = "u_nick")
     private String username;
-    @Column(name = "u_pass")
     private String password;
-
-    @Column(name = "u_fullname")
     private String fullname;
 
-    @Column(name = "u_regged")
-    private String regged;
-
-    @Column(name = "u_last")
-    private String lastLogin;
-
-    @Column(name = "u_arbeit")
-    private Date workingDay;
+    private Date registered;
+    private Date lastLogin;
+    private Date workingday;
 
     public User() {
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -63,27 +53,27 @@ public class User {
         this.fullname = fullname;
     }
 
-    public String getRegged() {
-        return regged;
+    public java.util.Date getRegistered() {
+        return registered;
     }
 
-    public void setRegged(String regged) {
-        this.regged = regged;
+    public void setRegistered(Date registered) {
+        this.registered = registered;
     }
 
-    public String getLastLogin() {
+    public java.util.Date getLastLogin() {
         return lastLogin;
     }
 
-    public void setLastLogin(String lastLogin) {
+    public void setLastLogin(Date lastLogin) {
         this.lastLogin = lastLogin;
     }
 
-    public Date getWorkingDay() {
-        return workingDay;
+    public Date getWorkingday() {
+        return workingday;
     }
 
-    public void setWorkingDay(Date workingDay) {
-        this.workingDay = workingDay;
+    public void setWorkingDay(Date workingday) {
+        this.workingday = workingday;
     }
 }

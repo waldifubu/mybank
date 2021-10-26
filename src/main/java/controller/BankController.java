@@ -17,7 +17,7 @@ public class BankController implements ActionListener {
 
 
     private Database database;
-    private Customer kunde;
+    private CustomerOld kunde;
     private AccountOld account;
     private BankLogic bankLogic;
 
@@ -81,7 +81,7 @@ public class BankController implements ActionListener {
         // Ab hier ist die Verbindung i.O.
         // Prüfe Logindaten
         if (database.userConn(user, pass)) {
-            kunde = new Customer(user, database, this);
+            kunde = new CustomerOld(user, database, this);
             return 0;
         }
 

@@ -1,6 +1,5 @@
 package dialog;
 
-import model.AppConstants;
 import model.Language;
 import model.MyConstants;
 
@@ -38,5 +37,9 @@ public class WorkingDayDialog extends ScreenDialog {
 
     public JButton getApplyButton() {
         return applyButton;
+    }
+
+    public String getWorkDate() {
+        return dateTextField.getText();
     }
 }

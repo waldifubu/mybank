@@ -2,11 +2,13 @@ package util;
 
 import entity.Account;
 import entity.Book;
+import entity.GiroAccount;
 import entity.User;
 import model.BankSettingsDTO;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
@@ -41,6 +43,8 @@ public class DatabaseService {
         }
 
         Properties settings = new Properties();
+
+        settings.put(Environment.HBM2DDL_AUTO, "update");
         settings.put(Environment.DRIVER, dto.getDbDriver());
         settings.put(Environment.URL, "jdbc:" + dbType + "://" + dto.getDbHost() + ":" + dto.getDbPort() + "/" + dto.getDbDatabase());
         settings.put(Environment.DIALECT, "org.hibernate.dialect.MariaDB103Dialect");
@@ -54,6 +58,7 @@ public class DatabaseService {
 
         cfg.addAnnotatedClass(User.class);
         cfg.addAnnotatedClass(Account.class);
+        cfg.addAnnotatedClass(GiroAccount.class);
 
         ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                 .applySettings(cfg.getProperties()).build();

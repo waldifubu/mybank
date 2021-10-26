@@ -1,13 +1,11 @@
 package entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "konten")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Account
 {
     @Id

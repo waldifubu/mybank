@@ -17,7 +17,7 @@ public class MyBankMenuBar extends JMenuBar {
     private JMenu helpMenu;
     private JMenu languageSelectionMenu;
 
-    public MyBankMenuBar(Language lang, View view) {
+    public MyBankMenuBar(Language lang) {
         super();
         fileMenu = new JMenu(lang.trans("file"));
         fileMenu.setMnemonic(KeyEvent.VK_D);

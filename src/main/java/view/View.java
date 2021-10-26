@@ -118,7 +118,7 @@ public class View extends JFrame implements Runnable {
     public void updateStatusBar(User user) {
         //String formArbeit = controller.k_getArbeit();
         //if (kontoChosen) formArbeit += " | " + language.trans("knummer") + " " + controller.ko_getNr();
-        status.setText(" " + language.trans("connuser") + " " + user.getFullname() + " | " + language.trans("tb_workday") + ": " + user.getWorkingDay().toLocalDate().toString());
+        status.setText(" " + language.trans("connuser") + " " + user.getFullname() + " | " + language.trans("tb_workday") + ": " + user.getWorkingday().toString());
     }
 
     public void closeSecondaryScreen() {
